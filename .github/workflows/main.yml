@@ -16,7 +16,10 @@ jobs:
       - name: Set Up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 14
+
+      - name: Install Dependencies
+        run: npm install vercel@33.4.1 debug@4.3.2 uuid@8.3.2 --save
 
       - name: Install Dependencies
         run: npm install
